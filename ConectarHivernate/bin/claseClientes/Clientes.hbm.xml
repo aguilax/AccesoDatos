@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-ene-2014 0:03:26 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="claseClientes.Clientes" table="CLIENTES">
+        <id name="apellidos" type="java.lang.String">
+            <column name="APELLIDOS" />
+            <generator class="assigned" />
+        </id>
+        <property name="idcliente" type="java.lang.Integer">
+            <column name="IDCLIENTE" />
+        </property>
+        <property name="nombre" type="java.lang.String">
+            <column name="NOMBRE" />
+        </property>
+        <property name="dni" type="java.lang.String">
+            <column name="DNI" />
+        </property>
+        <property name="provincia" type="java.lang.String">
+            <column name="PROVINCIA" />
+        </property>
+    </class>
+</hibernate-mapping>
