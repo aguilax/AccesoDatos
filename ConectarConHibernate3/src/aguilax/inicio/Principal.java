@@ -17,7 +17,9 @@ public class Principal {
 		System.out.println("Despues de Begin transaccion");
 		
 		Clientes c = new Clientes("payo", "lopez", "23456778", "peru");
+		System.out.println(c.getNombre());
 		session.save(c);
+		
 		session.getTransaction().commit();
 		
 		session.close();
